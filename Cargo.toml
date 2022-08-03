@@ -4,6 +4,8 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+#hvm = "0.1"
+hvm = { path = "HVM" }
 aws_lambda_events = "0.6.3"
 lambda_http = "0.6.0"
 lambda_runtime = "0.6.0"
