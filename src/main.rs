@@ -23,7 +23,10 @@ fn q(v: Value) -> Value {
     json!({
        "isBase64Encoded": false,
        "statusCode": 200,
-       "headers": { "content-type": "application/json" },
+       "headers": {
+          "content-type": "application/json",
+          "Access-Control-Allow-Origin": "*"
+       },
        "body": v.to_string()
     })
 }
